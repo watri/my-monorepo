@@ -11,6 +11,6 @@ func mainHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("/", mainHandler)
+	http.HandleFunc("/service1", mainHandler)
 	http.ListenAndServe(":8080", nil)
 }

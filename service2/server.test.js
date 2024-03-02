@@ -4,7 +4,7 @@ const http = require('http');
 describe('Node.js server test', () => {
   it('should respond to the root path with "Hello from Node.js service2!"', (done) => {
     const server = http.createServer((req, res) => {
-      if (req.url === '/') {
+      if (req.url === '/service2') {
         res.end('Hello from Node.js service2!\n');
       } else {
         res.end('Invalid path\n');
@@ -12,7 +12,7 @@ describe('Node.js server test', () => {
     });
 
     server.listen(3000, () => {
-      http.get('http://localhost:3000/', (response) => {
+      http.get('http://localhost:3000/service2', (response) => {
         let data = '';
         response.on('data', (chunk) => {
           data += chunk;
@@ -29,7 +29,7 @@ describe('Node.js server test', () => {
 
   it('should respond to an invalid path with "Invalid path"', (done) => {
     const server = http.createServer((req, res) => {
-      if (req.url === '/') {
+      if (req.url === '/service2') {
         res.end('Hello from Node.js service2!\n');
       } else {
         res.end('Invalid path\n');

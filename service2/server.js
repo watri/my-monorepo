@@ -2,7 +2,7 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-    if (req.url === '/') {
+    if (req.url === '/service2') {
         res.end('Hello from Node.js service2!\n');
     } else {
         res.end('Invalid path\n');
