@@ -4,15 +4,15 @@ There are two simple services
 1. Go service (service1)
 2. Node.js service (service2)
 
-
-Repo app and manifest (Github) : https://github.com/watri/my-monorepo
-Image Registry (Docker-Hub) : https://hub.docker.com/repositories/watri
+########################################################################
+- Repo app and manifest (Github) : https://github.com/watri/my-monorepo
+- Image Registry (Docker-Hub) : https://hub.docker.com/repositories/watri
     - service1 - docker pull watri/service1
     - service2 - docker pull watri/service2
-CI/CD using local Jenkins
-Kubernetes using Docker-Desktop
-Expose app to public internet using ngrok 
-
+- CI/CD using local Jenkins
+- Kubernetes using Docker-Desktop
+- Expose app to public internet using ngrok 
+########################################################################
 
 ----------------------------------------------------------------
 # Service1 
